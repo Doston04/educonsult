@@ -11,7 +11,7 @@
   --border-gray: #C2C2C3;
   --yellow: #EDE643;
   --xxl: 1800px;
-  --xl: 1440px;
+  --xl: 1320px;
   --lg: 1024px;
   --md: 768px;
   --sm: 600px;
@@ -741,9 +741,65 @@ input::-webkit-inner-spin-button {
   font-family: "Inter", sans-serif;
 }
 
+.grayNavigation {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.grayContent__content {
+  border-top: 1px solid var(--border-gray);
+  padding: 48px 20px 72px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.centerGray {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grayContentStartText {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.grayContent__div {
+  padding: 48px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.div__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.div__text {
+  font-size: 20px;
+  line-height: 32px;
+}
+
 @media (max-width: 1800px) {
   .contentCenter {
     max-width: var(--xl);
+  }
+  .grayContentStartText {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .div__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .div__text {
+    font-size: 18px;
+    line-height: 28px;
   }
   .heroMainText {
     font-size: 90px;
@@ -867,6 +923,18 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1440px) {
+  .grayContentStartText {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .div__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .div__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
   #bigben-img {
     width: 80%;
     bottom: -12%;
@@ -999,6 +1067,31 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px) {
+  .grayNavigation {
+    border-radius: 24px 24px 0 0 !important;
+  }
+  .grayContent__content {
+    border-radius: 0 0 24px 24px;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .grayContent__div {
+    border-radius: 24px;
+    padding: 24px;
+  }
+  .grayContentStartText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .div__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .div__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .mainNavigation__content {
     border-radius: 24px;
   }
@@ -1006,7 +1099,7 @@ input::-webkit-inner-spin-button {
     display: none;
   }
   .heroMainText {
-    font-size: 44px;
+    font-size: 42px;
     line-height: 50px;
   }
   .descriptionImage {
@@ -1139,5 +1232,9 @@ input::-webkit-inner-spin-button {
   .text__text {
     font-size: 20px;
     line-height: 26px;
+  }
+  .heroMainText {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
