@@ -1,0 +1,345 @@
+.aboutIntro {
+  margin-top: 96px;
+}
+
+.aboutIntro__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.aboutIntroContent {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ourMission {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.missionText {
+  font-size: 44px;
+  line-height: 56px;
+  font-weight: 600;
+  position: relative;
+}
+
+.mission__vector {
+  width: 33px;
+  height: 38px;
+  color: var(--main-blue);
+  position: absolute;
+  left: -25px;
+  top: -15px;
+}
+
+.why__content {
+  display: flex;
+  gap: 16px;
+  padding: 72px;
+  margin-top: 48px;
+  border-radius: var(--border-radius);
+}
+
+.grid__about {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.why-we {
+  width: 100%;
+  border: 1px solid #C2C2C3; 
+  border-radius: 32px;
+  height: 420px;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#whyy {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+}
+
+.reason {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;  
+}
+
+.reasonDesc {
+  font-size: 16px;
+  line-height: 28px;  
+}
+
+.shorts {
+  margin-top: 72px;
+}
+
+.shorts__content {
+  padding: 48px;
+  border-radius: var(--border-radius);
+}
+
+.shorts__topText {
+  font-size: 24px;
+  line-height: 40px;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.shorts__container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.short__vector {
+  width: 46px;
+  height: 52px;
+  color: var(--main-blue);
+}
+
+.shortAdvice {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.short__advice {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+/* ===== SWIPER ===== */
+
+.introSwiper {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  padding: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+
+.swiper-chevron {
+  width: 24px;
+  height: 24px;
+}
+
+.swiperButtonDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+}
+
+#prevChevron {
+  transform: rotate(180deg);
+}
+
+.swiperButton {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--main-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-blue);
+}
+
+.introSwiper {
+  position: relative;
+  height: 710px;
+}
+
+@media (max-width: 1800px) {
+  .aboutIntro {
+    margin-top: 80px;
+  }
+  .shorts__topText {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 900px;
+  }
+  .short__advice {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .missionText {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .introSwiper {
+    height: 540px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .why__content {
+    padding: 48px;
+  }
+  .why-we {
+    padding: 24px;
+  }
+  .shortAdvice {
+    gap: 20px;
+  }
+  .short__vector {
+    width: 40px;
+    height: 48px;
+  }
+  .short__advice {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .ourMission {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .missionText {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .introSwiper {
+    height: 440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid__about {
+    grid-template-columns: 1fr;
+  }
+  .why-we {
+    height: auto;
+    gap: 32px;
+  }
+  .aboutIntroContent {
+    padding: 24px;
+  }
+  .missionText {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .introSwiper {
+    height: 380px;
+    padding: 24px;
+  }
+  .swiperButton {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-chevron {
+    width: 20px;
+    height: 20px;
+  }
+  .mission__vector {
+    width: 24px;
+    height: 24px;
+    left: -14px;
+    top: -12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why__content, .shorts__content {
+    border-radius: 24px;
+    padding: 32px;
+  }
+  .shorts {
+    margin-top: 60px;
+  }
+  .short__vector {
+    width: 32px;
+    height: 38px;
+  }
+  .short__advice {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .shorts__content {
+    padding: 32px;
+  }
+  .shorts__topText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .introSwiper {
+    height: 300px;
+  }
+  .ourMission {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .missionText {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why__content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+  }
+  .shorts__content {
+    padding: 24px;
+  }
+  #whyy {
+    text-align: center;
+  }
+  .grid__about {
+    gap: 24px;
+  }
+  .short__vector {
+    width: 26px;
+    height: 32px;
+  }
+  .short__advice {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .shorts__topText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutIntro__content {
+    grid-template-columns: 1fr;
+  }
+  .introSwiper {
+    height: 260px;
+  }
+  .aboutIntroContent {
+    height: 260px;
+  }
+}

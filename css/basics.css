@@ -4,16 +4,17 @@
 
 :root {
   --main-blue: #3C4BDC;
-  --background-gray: #F5F5F5;  
+  --background-gray: #F5F5F7;  
   --white: #FFFFFF;
   --black: #020105;
   --light-black: #5D5D5F;
   --border-gray: #C2C2C3;
-  --xxl: 1700px;
+  --yellow: #EDE643;
+  --xxl: 1800px;
   --xl: 1440px;
   --lg: 1024px;
   --md: 768px;
-  --sm: 540px;
+  --sm: 600px;
   --border-radius: 40px;
   font-family: "Poppins", sans-serif;
   color: var(--black);
@@ -37,7 +38,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 main {
@@ -64,6 +65,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.3s;
 }
 
 .hidden {
@@ -122,6 +124,9 @@ a {
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+.header__navigation {
   background-color: var(--white);
 }
 
@@ -189,10 +194,214 @@ a {
   z-index: 5;
 }
 
+/* ===== CURRENT NAVIGATION ===== */
+
+.bgBlue {
+  background-color: var(--main-blue);
+}
+
+.bgGray {
+  background-color: var(--background-gray);
+}
+
+.white {
+  color: var(--white);
+}
+
+.mainNavigation__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 1%;
+}
+
+.currentNavigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.heroMainText {
+  max-width: 920px;
+  width: 100%;
+  font-size: 120px;
+  line-height: 128px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.heroSubtitle {
+  max-width: 850px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* ===== TEXT ===== */
+
+.text {
+  margin-top: 72px;
+}
+
+.textHome {
+  margin-top: 140px;
+}
+
+.text__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.text__text {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+}
+
+/* ===== NEWS ===== */
+
+.newsSection {
+  margin-top: 96px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 72px;
+  column-gap: 16px;
+}
+
+.news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news:hover .arrow-right-circle {
+  transform: translateX(0.5rem);
+  transition: 0.3s;
+}
+
+.news:hover .news__image>img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.news__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.news__image {
+  position: relative;
+  aspect-ratio: 16/10;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.newsTime {
+  font-size: 18px;
+  line-height: 24px;
+  color: #9A999B;
+}
+
+.newsTitle {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.newsDescription {
+  font-size: 24px;
+  line-height: 36px;
+  color: #5D5D5F;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.readmoreDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.readmore {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.arrow-right-circle {
+  width: 28px;
+  height: 28px;
+  transition: 0.3s;
+}
+
+.other-news-text {
+  font-size: 80px;
+  line-height: 96px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.newsDescriptionContainer {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px;
+  margin-top: 96px;
+}
+
+.descriptionImage {
+  position: relative;
+  aspect-ratio: 16/10;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.descriptionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+#title {
+  display: block;
+}
+
+#description {
+  display: block;
+}
+
 /* ===== FORM ===== */
 
 .formSection {
-  margin-top: 112px;
+  margin-top: 72px;
   margin-bottom: 140px;
 }
 
@@ -276,6 +485,7 @@ input::-webkit-inner-spin-button {
   padding-bottom: 31px;
   font-family: "Inter", sans-serif;
   border: none;
+  cursor: pointer;
 }
 
 .form__image-absolute {
@@ -532,6 +742,75 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1800px) {
+  .contentCenter {
+    max-width: var(--xl);
+  }
+  .heroMainText {
+    font-size: 90px;
+    line-height: 90px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .textHome {
+    margin-top: 80px;
+  }
+  .text__text {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .newsTime {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .newsTitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .newsDescription {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .readmore {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .arrow-right-circle {
+    width: 20px;
+    height: 20px;
+  }
+  .other-news-text {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .newsDescriptionContainer {
+    max-width: 1000px;
+    margin-top: 80px;
+  }
+  .grid3 {
+    row-gap: 64px;
+  }
+  .header__info__inner {
+    gap: 32px;
+  }
+  .header__info__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .phoneSvg {
+    width: 20px;
+    height: 20px;
+  }
+  .emailSvg {
+    width: 26px;
+    height: 26px;
+  }
+  .hamburger {
+    width: 60px;
+    height: 60px;
+  }
+  .hamburger__span {
+    width: 24px;
+  }
   .footer__content1 {
     padding: 48px;
   }
@@ -558,13 +837,32 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
   }
   .dropdown__content { 
-    top: 18px;
+    top: 24px;
   }
   .form {
-    max-width: 680px;
+    max-width: 480px;
+    gap: 12px;
   }
   .form__mainText {
-    max-width: 680px; 
+    max-width: 480px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .formSection__content {
+    padding: 48px;
+  }
+  .input {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .form__button {
+    padding: 24px 20px;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -619,54 +917,30 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
   }
   .dropdown__content { 
-    top: 26px;
+    top: 22px;
   }
-  .form {
-    max-width: 600px;
-  }
-  .form__mainText {
-    max-width: 600px; 
+  .text__text {
     font-size: 32px;
     line-height: 40px;
-  }
-  .input {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 28px 26px;
-  }
-  .input::placeholder {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .form__button {
-    font-size: 20px;
-    line-height: 24px;
-    padding: 28px 26px;
   }
 }
 
 @media (max-width: 1024px) {
-  .header__info__inner {
-    gap: 32px;
+  .heroMainText {
+    font-size: 64px;
+    line-height: 60px;
+    padding: 0 24px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
-  .header__info__text {
-    font-size: 16px;
-    line-height: 20px;
+  .other-news-text {
+    font-size: 52px;
+    line-height: 60px;
   }
-  .phoneSvg {
-    width: 20px;
-    height: 20px;
-  }
-  .emailSvg {
-    width: 26px;
-    height: 26px;
-  }
-  .hamburger {
-    width: 60px;
-    height: 60px;
-  }
-  .hamburger__span {
-    width: 24px;
+  .heroSubtitle {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 24px;
   }
   .footer__content1 {
     padding: 20px;
@@ -696,6 +970,16 @@ input::-webkit-inner-spin-button {
     width: 16px;
     height: 16px;
   }
+  .newsTitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .newsDescription {
+    font-size: 14px;
+  }
+  .readmore {
+    font-size: 14px;
+  }
   .footer__year {
     font-size: 14px;
     line-height: 20px;
@@ -708,23 +992,41 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     line-height: 20px;
   }
-  .form {
-    max-width: 480px;
-    gap: 12px;
-  }
-  .form__mainText {
-    max-width: 480px;
+  .text__text {
     font-size: 26px;
     line-height: 32px;
-  }
-  .formSection__content {
-    padding: 48px;
   }
 }
 
 @media (max-width: 768px) {
+  .mainNavigation__content {
+    border-radius: 24px;
+  }
   .header__info {
     display: none;
+  }
+  .heroMainText {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .descriptionImage {
+    border-radius: 24px;
+  }
+  .newsSection {
+    margin-top: 60px;
+  }
+  .other-news-text {
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 60px;
+  }
+  .input {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .heroSubtitle {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 24px;
   }
   .footer__content2 {
     flex-direction: row;
@@ -735,6 +1037,13 @@ input::-webkit-inner-spin-button {
   .navigation__navigation {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .grid3 {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+  .news__image {
+    aspect-ratio: 16/9;
   }
   .footer__navigation__content {
     border-radius: 24px;
@@ -747,6 +1056,13 @@ input::-webkit-inner-spin-button {
   }
   .footer__year {
     padding: 20px;
+  }
+  .formSection {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  footer {
+    margin-top: 60px;
   }
   .formSection__content {
     justify-content: center;
@@ -765,9 +1081,29 @@ input::-webkit-inner-spin-button {
   .form__button {
     padding: 22px 20px;
   }
+  .text, .textHome {
+    margin-top: 60px;
+  }
+  .text__inner {
+    gap: 24px;
+  }
+  .text__text {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 600px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+  .news__image {
+    max-height: 240px;
+    height: 100%;
+  }
+  .other-news-text {
+    font-size: 38px;
+    line-height: 40px;
+  }
   .footer__navigation__content {
     flex-direction: column;
   }
@@ -782,7 +1118,7 @@ input::-webkit-inner-spin-button {
     gap: 20px;
   }
   .formSection__content {
-    padding: 24px 20px;
+    padding: 24px;
   }
   .input {
     font-size: 14px;
@@ -797,6 +1133,10 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
   }
   .form__mainText {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .text__text {
     font-size: 20px;
     line-height: 26px;
   }

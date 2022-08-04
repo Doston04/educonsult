@@ -1,10 +1,15 @@
 const headerTop = document.querySelector(".header__info")
 window.addEventListener("scroll", () => {
     const headerNavigation = document.querySelector(".header__navigation")
+    const main = document.querySelector(".main")
     if (this.scrollY > headerTop.scrollHeight) {
         headerNavigation.classList.add("setFixed")
+        // main.classList.add("setMain")
+        main.style.marginTop = `${headerNavigation.scrollHeight}px`
     } else {
         headerNavigation.classList.remove("setFixed")
+        // main.classList.remove("setMain")
+        main.style.marginTop = 0
     }
 })
 
