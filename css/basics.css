@@ -240,6 +240,11 @@ a {
   margin-bottom: 100px;
 }
 
+#contactHero {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 .heroSubtitle {
   max-width: 850px;
   width: 100%;
@@ -803,6 +808,10 @@ input::-webkit-inner-spin-button {
     margin-top: 60px;
     margin-bottom: 60px;
   }
+  #contactHero {
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
   .textHome {
     margin-top: 80px;
   }
@@ -949,7 +958,7 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
   }
   .logo {
-    width: 160px;
+    width: 140px;
     height: 60px;
   }
   .content2__navigation {

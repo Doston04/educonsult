@@ -27,8 +27,8 @@ hamburger.addEventListener("click", () => {
     body.classList.toggle("overflow-y-hidden")
 })
 
-dropdownContent = document.querySelector(".dropdown__content")
-footerDropdown = document.querySelector(".footerDropdown")
+let dropdownContent = document.querySelector(".dropdown__content")
+let footerDropdown = document.querySelector(".footerDropdown")
 
 let chevronDown = document.querySelector(".chevron-down")
 
@@ -42,20 +42,20 @@ footerDropdown.addEventListener("mouseout", () => {
     chevronDown.classList.remove("activeToggle")
 })
 
-if (window.innerWidth < 600) {
-    let clicked = false
-    function toggleDropdown() {
-        if (clicked) {
-            dropdownContent.style.display = "flex"
-            chevronDown.classList.add("activeToggle")
-            clicked = false
-        } else {
-            dropdownContent.style.display = "none"
-            chevronDown.classList.remove("activeToggle")
-            clicked = true
-        }
+
+let clicked = false
+function toggleDropdown() {
+    if (clicked) {
+        dropdownContent.style.display = "flex"
+        chevronDown.classList.add("activeToggle")
+        clicked = false
+    } else {
+        dropdownContent.style.display = "none"
+        chevronDown.classList.remove("activeToggle")
+        clicked = true
     }
 }
+
 
 footerDropdown.addEventListener("click", toggleDropdown)
 
