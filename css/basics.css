@@ -694,9 +694,9 @@ input::-webkit-inner-spin-button {
   transition: 0.3s;
 }
 
-.dropdownLink:hover .dropdown__content {
+/* .dropdownLink:hover .dropdown__content {
   display: flex;
-}
+} */
 
 .chevron-down {
   width: 24px;

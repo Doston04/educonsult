@@ -4,11 +4,9 @@ window.addEventListener("scroll", () => {
     const main = document.querySelector(".main")
     if (this.scrollY > headerTop.scrollHeight) {
         headerNavigation.classList.add("setFixed")
-        // main.classList.add("setMain")
         main.style.marginTop = `${headerNavigation.scrollHeight}px`
     } else {
         headerNavigation.classList.remove("setFixed")
-        // main.classList.remove("setMain")
         main.style.marginTop = 0
     }
 })
@@ -29,10 +27,33 @@ hamburger.addEventListener("click", () => {
     body.classList.toggle("overflow-y-hidden")
 })
 
+dropdownContent = document.querySelector(".dropdown__content")
+footerDropdown = document.querySelector(".footerDropdown")
+
+footerDropdown.addEventListener("click", toggleDropdown)
+
+let clicked = false
+function toggleDropdown() {
+    if (clicked) {
+        dropdownContent.style.display = "flex"
+        clicked = false
+    } else {
+        dropdownContent.style.display = "none"
+        clicked = true
+    }
+}
+
+footerDropdown.addEventListener("mouseover", () => {
+    dropdownContent.style.display = "flex"
+})
+
+footerDropdown.addEventListener("mouseout", () => {
+    dropdownContent.style.display = "none"
+})
+
+
 const currentYearSpans = document.querySelectorAll(".currentYear")
 const currentYear = new Date().getFullYear()
 currentYearSpans.forEach(year => {
     year.append(currentYear)
 })
-
-
