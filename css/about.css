@@ -181,6 +181,22 @@
   height: 710px;
 }
 
+.aboutText {
+  margin: 48px auto 72px auto;
+}
+
+.aboutText__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.aboutText__text {
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 1140px;
+}
+
 @media (max-width: 1800px) {
   .aboutIntro {
     margin-top: 80px;
@@ -200,6 +216,11 @@
   }
   .introSwiper {
     height: 540px;
+  }
+  .aboutText__text {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 980px;
   }
 }
 
@@ -303,6 +324,17 @@
   .missionText {
     font-size: 20px;
     line-height: 26px;
+  }
+  .aboutText {
+    margin-top: 60px;
+  }
+  .aboutText__inner {
+    gap: 24px;
+  }
+  .aboutText__text {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
   }
 }
 

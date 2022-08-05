@@ -511,6 +511,77 @@ input::-webkit-inner-spin-button {
   max-width: 50%;
 }
 
+.sectionTitle {
+  font-size: 80px;
+  line-height: 96px;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* ===== FAQ ===== */
+
+.faq {
+  margin-top: 72px;
+}
+
+.centerFaq {
+  align-items: center;
+}
+
+.faq__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.faqs {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq__mainText {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+}
+
+.faq__div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--background-gray);
+  padding: 34px 32px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.faq__questionDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.question {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.answer {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.uiSvg {
+  width: 32px;
+  height: 32px;
+}
+
 /* ===== FOOTER ===== */
 
 .footer__navigation__content {
@@ -787,6 +858,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1800px) {
+  .sectionTitle {
+    font-size: 64px;
+    line-height: 72px;
+  }
   .contentCenter {
     max-width: var(--xl);
   }
@@ -924,6 +999,13 @@ input::-webkit-inner-spin-button {
     padding: 24px 20px;
     font-size: 22px;
     line-height: 30px;
+  }
+  .faqs {
+    max-width: 980px;
+  }
+  .uiSvg {
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -1188,6 +1270,28 @@ input::-webkit-inner-spin-button {
   .text__text {
     font-size: 24px;
   }
+  .faq {
+    margin-top: 60px;
+  }
+  .faq__mainText {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .faq__div {
+    padding: 24px;
+  }
+  .question {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .answer {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .uiSvg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1241,5 +1345,9 @@ input::-webkit-inner-spin-button {
   .heroMainText {
     font-size: 32px;
     line-height: 38px;
+  }
+  .question {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
