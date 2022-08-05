@@ -350,6 +350,7 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 100%;
 }
 
 .readmore {
@@ -455,8 +456,8 @@ input::-webkit-inner-spin-button {
 }
 
 .input {
+  flex: 1 1 auto;
   position: relative;
-  width: 100%;
   border-radius: 22px;
   background: none;
   border: 1px solid #5F8FFF;
@@ -486,8 +487,7 @@ input::-webkit-inner-spin-button {
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding: 31px 74px;
   font-family: "Inter", sans-serif;
   border: none;
   cursor: pointer;
@@ -996,9 +996,9 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
   }
   .form__button {
-    padding: 24px 20px;
-    font-size: 22px;
-    line-height: 30px;
+    padding: 35px 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .faqs {
     max-width: 980px;
@@ -1081,6 +1081,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1024px) {
+  .sectionTitle {
+    font-size: 56px;
+    line-height: 60px;
+  }
   .heroMainText {
     font-size: 64px;
     line-height: 60px;
@@ -1154,6 +1158,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 50px;
+    line-height: 54px;
+  }
   .grayNavigation {
     border-radius: 24px 24px 0 0 !important;
   }
@@ -1295,6 +1303,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 600px) {
+  .sectionTitle {
+    font-size: 42px;
+    line-height: 50px;
+  }
   .grid3 {
     grid-template-columns: 1fr;
   }
