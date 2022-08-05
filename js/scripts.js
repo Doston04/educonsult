@@ -30,26 +30,34 @@ hamburger.addEventListener("click", () => {
 dropdownContent = document.querySelector(".dropdown__content")
 footerDropdown = document.querySelector(".footerDropdown")
 
-footerDropdown.addEventListener("click", toggleDropdown)
-
-let clicked = false
-function toggleDropdown() {
-    if (clicked) {
-        dropdownContent.style.display = "flex"
-        clicked = false
-    } else {
-        dropdownContent.style.display = "none"
-        clicked = true
-    }
-}
+let chevronDown = document.querySelector(".chevron-down")
 
 footerDropdown.addEventListener("mouseover", () => {
     dropdownContent.style.display = "flex"
+    chevronDown.classList.add("activeToggle")
 })
 
 footerDropdown.addEventListener("mouseout", () => {
     dropdownContent.style.display = "none"
+    chevronDown.classList.remove("activeToggle")
 })
+
+if (window.innerWidth < 600) {
+    let clicked = false
+    function toggleDropdown() {
+        if (clicked) {
+            dropdownContent.style.display = "flex"
+            chevronDown.classList.add("activeToggle")
+            clicked = false
+        } else {
+            dropdownContent.style.display = "none"
+            chevronDown.classList.remove("activeToggle")
+            clicked = true
+        }
+    }
+}
+
+footerDropdown.addEventListener("click", toggleDropdown)
 
 
 const currentYearSpans = document.querySelectorAll(".currentYear")
