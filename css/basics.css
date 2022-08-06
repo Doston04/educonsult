@@ -728,6 +728,12 @@ input::-webkit-inner-spin-button {
   padding: 34px 32px;
   border-radius: 24px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.faq__div:hover {
+  background-color: #ebebeb;
+  transition: 0.2s;
 }
 
 .faq__questionDiv {
