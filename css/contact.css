@@ -88,27 +88,6 @@
   width: 100%;
 }
 
-.socialMediaDiv {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.socialMedia {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--white);
-}
-
-.socialMediaIcon {
-  width: 40px;
-  height: 40px;
-}
-
 .grayMain__map {
   position: relative;
   height: 576px;
@@ -134,14 +113,6 @@
   }
   .contacts__other {
     gap: 32px;
-  }
-  .socialMedia {
-    width: 64px;
-    height: 64px;
-  }
-  .socialMediaIcon {
-    width: 28px;
-    height: 28px;
   }
   .yurakDiv {
     padding: 20px;
@@ -208,14 +179,6 @@
     font-size: 14px;
     line-height: 20px;
     max-width: 160px;
-  }
-  .socialMedia {
-    width: 52px;
-    height: 52px;
-  }
-  .socialMediaIcon {
-    width: 24px;
-    height: 24px;
   }
   .grayMain__map {
     height: 300px;
