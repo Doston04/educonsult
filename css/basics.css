@@ -1635,4 +1635,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     line-height: 24px;
   }
+  .mobileHeader__content {
+    padding-bottom: 128px;
+  }
 }
