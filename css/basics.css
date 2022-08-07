@@ -83,7 +83,8 @@ a {
 
 .overflow-y-hidden {
   position: fixed;
-  inset: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -522,6 +523,11 @@ a {
   align-items: center;
   gap: 8px;
   width: 100%;
+}
+
+.readmoreDiv:hover .arrow-right-circle {
+  transform: translateX(0.5rem);
+  transition: 0.3s;
 }
 
 .readmore {
@@ -1636,6 +1642,6 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
   }
   .mobileHeader__content {
-    padding-bottom: 128px;
+    padding-bottom: 120px;
   }
 }

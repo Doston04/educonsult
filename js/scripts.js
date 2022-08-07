@@ -72,16 +72,6 @@ let dropdownContent = document.querySelector(".dropdown__content")
 let footerDropdown = document.querySelector(".footerDropdown")
 let chevronDown = document.querySelector(".chevron-down")
 
-footerDropdown.addEventListener("mouseover", () => {
-    dropdownContent.style.display = "flex"
-    chevronDown.classList.add("activeToggle")
-})
-
-footerDropdown.addEventListener("mouseout", () => {
-    dropdownContent.style.display = "none"
-    chevronDown.classList.remove("activeToggle")
-})
-
 let clicked = false
 function toggleDropdown() {
     if (clicked) {
@@ -94,6 +84,16 @@ function toggleDropdown() {
         clicked = true
     }
 }
+
+footerDropdown.addEventListener("mouseover", () => {
+    dropdownContent.style.display = "flex"
+    chevronDown.classList.add("activeToggle")
+})
+
+footerDropdown.addEventListener("mouseout", () => {
+    dropdownContent.style.display = "none"
+    chevronDown.classList.remove("activeToggle")
+})
 
 footerDropdown.addEventListener("click", toggleDropdown)
 
