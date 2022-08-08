@@ -157,6 +157,8 @@ button {
   z-index: 6;
   width: 200px;
   height: 96px;
+  border-radius: 24px;
+  padding: 20px;
 }
 
 #logo {
@@ -281,7 +283,7 @@ button {
 }
 
 .margin {
-  height: 104px;
+  height: 130px;
 }
 
 .mobileSvyaz {
@@ -803,6 +805,7 @@ input::-webkit-inner-spin-button {
 .footer__content2 {
   flex: 1 1 auto;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
 }
 
@@ -1047,6 +1050,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1800px) {
+  .servicesMobileContainer {
+    gap: 18px;
+  }
   .centerImage img {
     width: 600px;
     height: 340px;
@@ -1062,8 +1068,8 @@ input::-webkit-inner-spin-button {
     gap: 32px;
   }
   .mobileLink {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 36px;
   }
   .sectionTitle {
     font-size: 64px;
