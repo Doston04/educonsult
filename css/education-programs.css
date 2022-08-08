@@ -39,7 +39,7 @@
   gap: 32px;
 }
 
-.country:nth-child(1), .country:nth-child(6), .country:nth-child(7), .country:nth-child(12) {
+.country:nth-child(1), .country:nth-child(6), .country:nth-child(7) {
   grid-column: span 2 / span 2;
 }
 
@@ -172,4 +172,122 @@
   z-index: -2;
   bottom: -55%;
   right: -5%;
+}
+
+.country__image {
+  position: absolute;
+  bottom: 0;
+  right: -3%;
+  width: 70%;
+  height: 90%;
+  z-index: -1;
+  object-fit: fill;
+}
+
+@media (max-width: 1800px) {
+  .country__div {
+    height: 400px;
+  }
+  .span1__background {
+    width: 330px;
+    height: 330px;
+    right: -40%;
+  }
+  .span2__background {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .country__div {
+    height: 360px;
+  }
+  .span1__background {
+    width: 300px;
+    height: 300px;
+  }
+  .span2__background {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .countriesContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .country:nth-child(1), .country:nth-child(4), .country:nth-child(5) {
+    grid-column: span 2 / span 2;
+  }
+  .country:nth-child(6) {
+    grid-column: auto;
+  }
+  .country__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .universities {
+    margin-top: 60px;
+  }
+  .universities__content {
+    padding: 24px;
+  }
+  .countriesContainer {
+    grid-template-columns: 1fr;
+  }
+  .country:nth-child(1), .country:nth-child(4), .country:nth-child(5), .country:nth-child(6), .country:nth-child(7) {
+    grid-column: auto;
+  }
+  .country__image {
+    width: 60%;
+    height: 90%;
+    object-fit: fill;
+  }
+  .span1__background {
+    width: 400px;
+    height: 400px;
+    bottom: -35%;
+    right: -5%;
+  }
+  .span2__background {
+    width: 400px;
+    height: 400px;
+    right: -6%;
+    bottom: -30%;
+  }
+  .country {
+    border-radius: 24px;
+  }
+  .country__div {
+    height: 320px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .span1__background {
+    width: 330px;
+    height: 330px;
+    right: -30%;
+  }
+  .span2__background {
+    width: 330px;
+    height: 330px;
+    right: -30%;
+  }
+  .country__image {
+    height: 80%;
+    width: 70%;
+  }
+  .universities__content {
+    gap: 24px;
+  }
+  .mainName {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
