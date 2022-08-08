@@ -1495,6 +1495,7 @@ input::-webkit-inner-spin-button {
     padding: 0 24px;
   }
   .footer__content2 {
+    display: -webkit-flex;
     flex-direction: row;
   }
   .content2__navigation {
@@ -1613,6 +1614,7 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
   }
   .footer__content2 {
+    display: -webkit-flex;
     flex-direction: column;
   }
   .navigation__navigation {
