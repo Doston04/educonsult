@@ -49,6 +49,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3C4BDC !important;
 }
 
 main {
@@ -203,6 +208,7 @@ button {
 .hamburger__span {
   width: 32px;
   height: 2px;
+  border-radius: 4px;
   background-color: var(--white);
   transition: 0.3s;
 }
@@ -283,7 +289,7 @@ button {
 }
 
 .margin {
-  height: 130px;
+  height: 120px;
 }
 
 .mobileSvyaz {
@@ -312,8 +318,9 @@ button {
 .mobileLinkContainer {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 48px;
   width: max-content;
+  height: 100%;
 }
 
 .mobileLink {
@@ -329,13 +336,14 @@ button {
 }
 
 .servicesMobileContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .mobileServiceList {
-  animation: marginTop 500ms ease;
+  animation: marginTop .5s ease;
   display: none;
   flex-direction: column;
   gap: 24px;
@@ -453,6 +461,7 @@ button {
   font-size: 48px;
   line-height: 64px;
   font-weight: 500;
+  max-width: 1570px;
 }
 
 /* ===== NEWS ===== */
@@ -592,7 +601,7 @@ button {
 /* ===== FORM ===== */
 
 .formSection {
-  margin-top: 72px;
+  margin-top: 100px;
   margin-bottom: 140px;
 }
 
@@ -731,6 +740,12 @@ input::-webkit-inner-spin-button {
   font-size: 48px;
   line-height: 64px;
   font-weight: 500;
+}
+
+.faqText {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .faq__div {
@@ -963,8 +978,8 @@ input::-webkit-inner-spin-button {
 }
 
 .chevron-down {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
 }
 
@@ -1231,12 +1246,16 @@ input::-webkit-inner-spin-button {
     font-size: 18px;
     line-height: 24px;
   }
-  .faqs {
+  .faqs, .faqText {
     max-width: 980px;
   }
   .uiSvg {
     width: 28px;
     height: 28px;
+  }
+  .chevron-down {
+    width: 24px;
+    height: 24px;
   }
 }
 

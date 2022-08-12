@@ -95,6 +95,63 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  z-index: 1;
+}
+
+.blurredInput {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.subs1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 20%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.subs1__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.3;
+}
+
+.subs2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 25%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.subs2__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .subscribe__form {
@@ -124,7 +181,7 @@
   line-height: 32px;
   font-weight: 600;
   text-transform: uppercase;
-  border-radius: var(--border-radius);
+  border-radius: 24px;
 }
 
 #textLinkConsultation {
@@ -153,6 +210,7 @@
 }
 
 .serviceImage {
+  position: relative;
   background-image: url("../media/serviceImg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -164,6 +222,18 @@
   padding: 32px;
   display: flex;
   align-items: flex-end;
+  z-index: 1;
+}
+
+.serviceImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  z-index: -1;
 }
 
 .image__text {
@@ -602,6 +672,12 @@
     width: 28px;
     height: 28px;
   }
+  .subs1 {
+    max-width: 30%;
+  }
+  .subs2 {
+    max-width: 35%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -680,5 +756,11 @@
     }
     .gif__content {
       height: 360px;
+    }
+    .subs1 {
+      max-width: 60%;
+    }
+    .subs2 {
+      display: none;
     }
 }
