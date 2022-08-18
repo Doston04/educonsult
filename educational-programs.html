@@ -172,126 +172,156 @@
   </header>
   <main class="main">
     <div class="mainNavigation">
-		<div class="mainNavigation__inner contentCenter">
-		  <div class="mainNavigation__content bgBlue white">
-			<div class="currentNavigation">
-				<span>Home</span>
-				<span>/</span>
-				<span>Educational programs</span>
-			</div>
-			<p class="heroMainText">Educational programs</p>
-			<p class="heroSubtitle">Our services include, but are not limited to, connecting you with top UK Universities, private school networks and training providers. Our aim is to offer you guidance and ease, regardless of where you reside in the world.</p>
-		  </div>	
-		</div>
-	</div>
+      <div class="mainNavigation__inner contentCenter">
+        <div class="mainNavigation__content bgBlue white">
+        <div class="currentNavigation">
+          <span>Home</span>
+          <span>/</span>
+          <span>Educational programs</span>
+        </div>
+        <p class="heroMainText">Educational programs</p>
+        <p class="heroSubtitle">Our services include, but are not limited to, connecting you with top UK Universities, private school networks and training providers. Our aim is to offer you guidance and ease, regardless of where you reside in the world.</p>
+        </div>	
+      </div>
+	  </div>
     <div class="universities">
       <div class="universities__inner contentCenter">
         <div class="universities__content">
-		  <form class="filterContainer"></form>
-		  <p class="mainName">University</p>
-		  <div class="otherContent countriesContainer">
-            <div id="country1" class="country span2">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">Great Britain</p>
-                  <p class="universitiesCount">24 univer.</p>
-                </div>
-                <div id="country1__background" class="span2__background"></div>
-                <div><img class="country__image" src="./media/westminster.png" alt="westminster"></div>
-              </a>
+          <form class="filterContainer">
+            <div class="searchBar">
+              <input type="text" name="search" class="Input" placeholder="Search" />
+              <svg class="searchSvg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4451 20.4467L26.6651 26.668M23.1118 14.0093C23.1118 19.0373 19.0358 23.1133 14.0078 23.1133C8.97981 23.1133 4.90381 19.0373 4.90381 14.0093C4.90381 8.98133 8.97981 4.90533 14.0078 4.90533C19.0358 4.90533 23.1118 8.98133 23.1118 14.0093Z" stroke="#3C4BDC" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-            <div id="country2" class="country">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
-                </div>
-                <div id="country2__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
+            <div class="filterBar">
+              <select class="Input filter__input" name="TypeOfUniversity">
+                <option value="type">Type of university</option>
+                <optgroup label="Great Britain">
+                  <option value="value1">Value 1</option>
+                  <option value="value2">Value 2</option>
+                </optgroup>
+              </select>
+              <select class="Input filter__input" name="sortBy">
+                <option value="sort">Sort by</option>
+                <optgroup label="Great Britain">
+                  <option value="value1">Value 1</option>
+                  <option value="value2">Value 2</option>
+                </optgroup>
+              </select>
+              <select class="Input filter__input" name="TypeOfProgram">
+                <option value="type">Type of program</option>
+                <optgroup label="Great Britain">
+                  <option value="value1">Value 1</option>
+                  <option value="value2">Value 2</option>
+                </optgroup>
+              </select>
             </div>
-            <div id="country3" class="country">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
+          </form>
+          <p class="mainName">University</p>
+          <div class="otherContent countriesContainer">
+                <div id="country1" class="country span2">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">Great Britain</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country1__background" class="span2__background"></div>
+                    <div><img class="country__image" src="./media/westminster.png" alt="westminster"></div>
+                  </a>
                 </div>
-                <div id="country3__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
-            </div>
-            <div id="country4" class="country">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country2" class="country">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country2__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
                 </div>
-                <div id="country4__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
-            </div>
-            <div id="country5" class="country">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country3" class="country">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country3__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
                 </div>
-                <div id="country5__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
-            </div>
-            <div id="country6" class="country span2">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">Great Britain</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country4" class="country">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country4__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
                 </div>
-                <div id="country6__background" class="span2__background"></div>
-                <div><img class="country__image" src="./media/westminster.png" alt="westminster"></div>
-              </a>
-            </div>
-            <div id="country7" class="country span2">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">Great Britain</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country5" class="country">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country5__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
                 </div>
-                <div id="country7__background" class="span2__background"></div>
-                <div><img class="country__image" src="./media/westminster.png" alt="westminster"></div>
-              </a>
-            </div>
-            <div id="country8" class="country span2">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country6" class="country span2">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">Great Britain</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country6__background" class="span2__background"></div>
+                    <div><img class="country__image" src="./media/westminster.png" alt="westminster"></div>
+                  </a>
                 </div>
-                <div id="country8__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
-            </div>
-            <div id="country9" class="country">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country7" class="country span2">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">Great Britain</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country7__background" class="span2__background"></div>
+                    <div><img class="country__image" src="./media/westminster.png" alt="westminster"></div>
+                  </a>
                 </div>
-                <div id="country9__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
-            </div>
-            <div id="country9" class="country">
-              <a class="country__div" href="./universities-inner.html">
-                <div class="aboutCountry">
-                  <p class="country__name">France</p>
-                  <p class="universitiesCount">24 univer.</p>
+                <div id="country8" class="country span2">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country8__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
                 </div>
-                <div id="country9__background" class="span1__background"></div>
-                <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
-              </a>
-            </div>
+                <div id="country9" class="country">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country9__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
+                </div>
+                <div id="country9" class="country">
+                  <a class="country__div" href="./universities-inner.html">
+                    <div class="aboutCountry">
+                      <p class="country__name">France</p>
+                      <p class="universitiesCount">24 univer.</p>
+                    </div>
+                    <div id="country9__background" class="span1__background"></div>
+                    <div><img class="country__image" src="./media/eyfel.png" alt="eyfel"></div>
+                  </a>
+                </div>
           </div>	
-		</div>
+		    </div>
       </div>  
     </div>
     <div class="formSection">
